@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "alexvermtodolist": {
+      "hosting": {
+        "firebase-todolist": [
+          "alexvermtodolist"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "alexvermtodolist"
+  }
+}
