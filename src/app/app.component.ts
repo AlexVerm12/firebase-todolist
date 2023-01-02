@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Firestore, collectionData, collection } from '@angular/fire/firestore';
+import { Firestore, collectionData, collection, doc, setDoc } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -23,14 +23,8 @@ export class AppComponent {
 
   addTodo(){
     const coll = collection(this.firestore, 'todos');
-    setDoc(doc(coll, "your-id"), {name: this.todotext});
+    setDoc(doc(coll), {name: this.todotext});
   }
 }
-function setDoc(arg0: any, infos: any) {
-  throw new Error('Function not implemented.');
-}
 
-function doc(notesRef: any, arg1: string): any {
-  throw new Error('Function not implemented.');
-}
 
